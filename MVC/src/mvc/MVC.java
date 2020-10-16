@@ -23,6 +23,9 @@ public class MVC {
         JFPrincipal vistaL = new JFPrincipal();
         EmpleadoDAO modeloL = new EmpleadoDAO();
         Login login= new Login(vistaL, modeloL);
+        vistaL.setVisible(true);
+        vistaL.setLocationRelativeTo(null);
+       
     }
     
 }

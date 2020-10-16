@@ -33,7 +33,7 @@ public class CEmpleado implements ActionListener  {
     public void actionPerformed(ActionEvent e){
         empleado = modeloEmpleado.verificaUsuario(cedula, contraseña);
         JOptionPane.showMessageDialog(vistaEmpleado, "DATOS DE USUARIO EMPLEADO \n"+
-                "Apellidos y Nombres: "+empleado.getApellidos()+", "+empleado.getNombres()+"\n");
+                "Nombres: "+empleado.getApellidos()+"\n Apellidos:"+empleado.getNombres()+"\n");
     }
     
 }

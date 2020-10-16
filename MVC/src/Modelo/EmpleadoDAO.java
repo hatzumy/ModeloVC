@@ -20,8 +20,7 @@ public class EmpleadoDAO {
         String nombres = "Pedro";
         try {
             empleado = new Empleado();
-            
-            if(cedula.equals(cc)&& contraseña.equals(password)){
+            if(cedula==cc && contraseña==password){
                empleado = new Empleado();
                empleado.setCedula(cc);
                empleado.setContraseña(password);
