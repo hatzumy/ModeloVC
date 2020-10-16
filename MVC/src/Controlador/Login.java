@@ -32,8 +32,10 @@ public class Login implements ActionListener{
         
         String cedula= vistaLogin.jTCedula.getText();
         String contraseña = String.valueOf(vistaLogin.jPContraseña.getPassword());
+        System.out.println(cedula+ "        "+contraseña);
         empleado = modeloLogin.verificaUsuario(cedula, contraseña);
-        if(empleado==null){
+         System.out.println("esto es:"+empleado.getCedula());
+        if(empleado==null ||empleado.getCedula().equals("")){
             JOptionPane.showMessageDialog(vistaLogin, "Empleado con datos ingresados no encontrado.");
         }else{
             JOptionPane.showMessageDialog(vistaLogin, "Datos correctos.");

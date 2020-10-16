@@ -18,9 +18,11 @@ public class EmpleadoDAO {
         String password = "12345";
         String apellidos = "Perez";
         String nombres = "Pedro";
+        System.out.println(cedula+"    "+ contraseña);
         try {
             empleado = new Empleado();
-            if(cedula==cc && contraseña==password){
+            if(cedula.equals("12345") && contraseña.equals("12345")){
+                System.out.println("entro");
                empleado = new Empleado();
                empleado.setCedula(cc);
                empleado.setContraseña(password);
