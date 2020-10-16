@@ -30,8 +30,8 @@ public class JFPrincipal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jTCedula = new javax.swing.JTextField();
-        jTContraseña = new javax.swing.JTextField();
         jBIngresar = new javax.swing.JButton();
+        jPContraseña = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("loginUsuario");
@@ -58,7 +58,7 @@ public class JFPrincipal extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jBIngresar)
-                            .addComponent(jTContraseña))))
+                            .addComponent(jPContraseña))))
                 .addContainerGap(55, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -71,7 +71,7 @@ public class JFPrincipal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jTContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29)
                 .addComponent(jBIngresar)
                 .addContainerGap(21, Short.MAX_VALUE))
@@ -119,7 +119,7 @@ public class JFPrincipal extends javax.swing.JFrame {
     public javax.swing.JButton jBIngresar;
     public javax.swing.JLabel jLabel1;
     public javax.swing.JLabel jLabel2;
+    public javax.swing.JPasswordField jPContraseña;
     public javax.swing.JTextField jTCedula;
-    public javax.swing.JTextField jTContraseña;
     // End of variables declaration//GEN-END:variables
 }

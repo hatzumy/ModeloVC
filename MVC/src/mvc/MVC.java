@@ -5,6 +5,10 @@
  */
 package mvc;
 
+import Controlador.Login;
+import Modelo.EmpleadoDAO;
+import Vista.JFPrincipal;
+
 /**
  *
  * @author Mary Alejandra
@@ -16,7 +20,9 @@ public class MVC {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("prueba");
+        JFPrincipal vistaL = new JFPrincipal();
+        EmpleadoDAO modeloL = new EmpleadoDAO();
+        Login login= new Login(vistaL, modeloL);
     }
     
 }
